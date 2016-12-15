@@ -21,13 +21,7 @@ fun todoTask4(collection: Collection<Int>): Nothing = TODO(
     documentation = doc4(),
     references = { JavaCode4().task4(collection) })
 
-fun task4(collection: Collection<Int>): Boolean {
-
-    val t4 = { x: Int -> x % 42 == 0 }
-
-    return collection.any(t4)
-
-}
+fun task4(collection: Collection<Int>): Boolean = collection.any({ x: Int -> x % 42 == 0 })
 
 
 
